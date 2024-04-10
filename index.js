@@ -27,3 +27,12 @@ function isPalindrome(str) {
 }
 
 module.exports = isPalindrome;
+
+// Additional test cases
+console.log(isPalindrome("")); // true (empty string is a palindrome)
+console.log(isPalindrome("a")); // true (single character is a palindrome)
+console.log(isPalindrome("Aibohphobia")); // true (case-insensitive palindrome)
+console.log(isPalindrome("Step on no pets")); // true (ignores spaces)
+console.log(isPalindrome("Was it a car or a cat I saw")); // true (ignores spaces and punctuation)
+console.log(isPalindrome("Palindrome")); // false (non-palindrome)
+console.log(isPalindrome("12321")); // false (only alphabetic characters are considered)
